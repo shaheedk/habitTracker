@@ -40,7 +40,7 @@ const HabitList: React.FC = () => {
         <Paper key={habit.id} elevation={2} sx={{ p: 2 }}>
           <Grid container alignItems="center" spacing={2}>
             {/* Habit Info */}
-            <Grid item xs={12} sm={6}>
+            <Grid >
               <Typography variant="h6">{habit.name}</Typography>
               <Typography
                 variant="body2"
@@ -52,7 +52,8 @@ const HabitList: React.FC = () => {
             </Grid>
 
             {/* Action Buttons */}
-            <Grid xs={12} sm={6}>
+            <Grid >
+              
               <Box sx={{ display: "flex", justifyContent: "flex-end", gap: 1 }}>
                 <Button
                   onClick={() =>
